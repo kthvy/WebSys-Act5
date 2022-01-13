@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" >
+    <style type=text/css>
+        @font-face {
+            font-family: 'ShallowThoughts';
+            src: url('fonts/Christian-Heedlay.woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Bodrum';
+            src: url('fonts/Bodrum.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Debock';
+            src: url('fonts/Debock-Personal-Use.otf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Comfortaa';
+            src: url('fonts/Comfortaa_Bold.woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Paragraph';
+            src: url('fonts/JosefinSans-Bold.woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+         @font-face {
+            font-family: 'Anderik';
+            src: url('fonts/Anderik.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #fff6fa;
+        }
+        h2 {
+            font-family: Paragraph;
+            font-size: 30px;
+            color: #174240;
+        }
+        /* Header/Blog Title */
+        .header {
+            padding: 40px;
+            text-align: center;
+            background: url("home/head.jpg");
+        }
+        
+        .header h1 {
+            font-size: 50px;
+        }
+        /* Style the top navigation bar */
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #794028;
+        }
+        /* Style the topnav links */
+    
+        .topnav a {
+            float: left;
+            display: block;
+            color: #fcf1f0;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: Paragraph;
+            font-size: 20px;
+        }
+        /* Change color on hover */
+        
+        .topnav a:hover {
+            background-color: #4b2637;
+            color: #f3a8bb;
+        }
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+        /* Right column */
+        
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #fff6fa;
+            padding-left: 20px;
+        }
+        .abtme {
+            position: relative; 
+            width: 200px; 
+            height: 200px; 
+            overflow: hidden; 
+            border-radius: 50%; 
+        } 
+        
+        .fakeimg {
+            background-img: ;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /*photos*/
+
+        .photo {
+            background: url("home/Untitled-2.jpg");
+            padding: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .pop1 {
+            background: url("home/image0.jpeg");
+            padding: 40px;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+        }
+        .pop2 {
+            background: url("home/image1.jpg");
+            padding: 40px;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+        }
+        .pop3 {
+            background: url("home/image2.jpeg");
+            padding: 40px;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+        }
+        .abtme img { width: 100%; height: auto;
+        }
+
+        /*text styles*/
+
+        .poptxt {
+            text-align: center;
+            padding: 14px 14px;
+            font-family: Paragraph;
+            font-size: 20px;
+            color: white;
+            -webkit-text-stroke: 0.5px black;
+        }
+        .abttxt {
+
+        }
+        .links {
+            font-family: Bodrum;
+            font-size: 20px;
+            color: #794028;
+            ;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Footer */
+        .footer {
+            padding: 20px;
+            background: #000;
+            margin-top: 20px;
+        }
+        .container li{
+            color: black;
+        }
+        .container i{
+            color: #f3a8bb;
+        }
+        .titleM {
+            font-family: ShallowThoughts;
+            color: #4b1f0e;
+            line-height: 2px;
+        }
+        .subH {
+            font-family: Century Gothic;
+            font-style: bold;
+            color: white;
+            font-size: 10px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+          }
+          html {
+            box-sizing: border-box;
+          }
+          *, *:before, *:after {
+            box-sizing: inherit;
+          }
+          .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+          }
+          .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+          }
+          .about-section {
+            padding: 30px;
+            text-align: center;
+            background-image: url("home/head.jpg");
+            color: white;
+          }
+          .container {
+            padding: 0 16px;
+          }
+          .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          .title {
+            color: #f3a8bb;
+            font-family: Bodrum;
+            font-size: 30px;
+          }
+          .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #794028;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+        .button:hover {
+            background-color: #f3a8bb;
+        }
+        .us1 {
+        font-family: Comfortaa;
+        font-size: 50px;
+        color: #fff6fa;
+        }
+        .titleT {
+            font-size: 50px;
+            font-family: ShallowThoughts;
+            color: #794028;
+        }
+
+
+          @media screen and (max-width: 650px) {
+            .column {
+              width: 100%;
+              display: block;
+            }
+          }
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+        @media screen and (max-width: 800px) {
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 class="titleM">likhang humaling</h1>
+        <p class="subH">photography  |  layouts  |  graphic design  |  paintings  |  art and crafts</p>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="folio.html">Folio</a>
+        <a href="art.html">Artworks</a>
+        <a href="about.html" style="float:right">About me</a>
+    </div>
+
+    <div class="about-section">
+        <h1 class="us1">behind likhang humaling</h1>
+        <p>Likhang Humaling offers capturing your fond memories in photographs.</p>
+        <p>We cater all kinds of photo shoots for an affordable price.</p>
+    </div>
+    <br>
+    <br>
+      <h1 class = "titleT" style="text-align:center">Our Team</h1>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="abt/humaling.jpg" alt="LH" style="width:100%">
+            <div class="container">
+              <h2>Likhang Humaling</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Official Facebook Page</p>
+              <p><i>humalingcreatives@gmail.com</i></p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="abt/art.jpg" alt="Kim" style="width:100%">
+            <div class="container">
+              <h2>Kim Ambay</h2>
+              <p class="title">Art Director</p>
+              <p>Hindi pwede ang pwede na</p>
+              <p><i>kthvyambs@gmail.com</i></p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="abt/des.jpg" alt="Merylle" style="width:100%">
+            <div class="container">
+              <h2>Merylle Masangkay</h2>
+              <p class="title">Designer</p>
+              <p>Ang hobby ko po ay tumunganga.</p>
+              <p><i>merrymerrymasangkay@gmail.com</i></p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="footer">
+        <div class="container">
+            <div  "social">
+                <ul>
+                    <li class="fa fa-facebook"><i>www.facebook.com/kthvy</i> </li>
+                    <li class="fa fa-twitter"><i>www.twitter.com/keithlings</i> </li>
+                    <li class="fa fa-youtube"><i>www.youtube.com/KimAmbay</i> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

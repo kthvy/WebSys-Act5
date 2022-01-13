@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" >
+    <style type=text/css>
+        @font-face {
+            font-family: 'ShallowThoughts';
+            src: url('fonts/Christian-Heedlay.woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Bodrum';
+            src: url('fonts/Bodrum.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Debock';
+            src: url('fonts/Debock-Personal-Use.otf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Comfortaa';
+            src: url('fonts/Comfortaa_Bold.woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Paragraph';
+            src: url('fonts/JosefinSans-Bold.woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+         @font-face {
+            font-family: 'Anderik';
+            src: url('fonts/Anderik.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #fff6fa;
+        }
+        h2 {
+            font-family: Paragraph;
+            font-size: 30px;
+            color: #174240;
+        }
+        /* Header/Blog Title */
+        .header {
+            padding: 40px;
+            text-align: center;
+            background: url("home/head.jpg");
+        }
+        
+        .header h1 {
+            font-size: 50px;
+        }
+        /* Style the top navigation bar */
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #794028;
+        }
+        /* Style the topnav links */
+    
+        .topnav a {
+            float: left;
+            display: block;
+            color: #fcf1f0;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: Paragraph;
+            font-size: 20px;
+        }
+        /* Change color on hover */
+        
+        .topnav a:hover {
+            background-color: #4b2637;
+            color: #f3a8bb;
+        }
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+        /* Right column */
+        
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #fff6fa;
+            padding-left: 20px;
+        }
+        .abtme {
+            position: relative; 
+            width: 200px; 
+            height: 200px; 
+            overflow: hidden; 
+            border-radius: 50%; 
+        } 
+        
+        .fakeimg {
+            background-img: ;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /*photos*/
+
+        .artwork1 {
+            background: url("art/art1.jfif");
+            padding: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .artwork2 {
+            background: url("art/art2.jpeg");
+            padding: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .artwork3 {
+            background: url("art/art3.jfif");
+            padding: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .pop1 {
+            background: url("home/image0.jpeg");
+            padding: 40px;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+        }
+        .pop2 {
+            background: url("home/image1.jpg");
+            padding: 40px;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+        }
+        .pop3 {
+            background: url("home/image2.jpeg");
+            padding: 40px;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+        }
+
+        
+            
+        .abtme img { width: 100%; height: auto; 
+        }
+
+        /*text styles*/
+
+        .poptxt {
+            text-align: center;
+            padding: 14px 14px;
+            font-family: Paragraph;
+            font-size: 20px;
+            color: white;
+            -webkit-text-stroke: 0.5px black;
+        }
+        .abttxt {
+
+        }
+
+        .links {
+            font-family: Bodrum;
+            font-size: 20px;
+            color: #794028;
+            ;
+            
+        }
+
+        /* Add a card effect for articles */
+        
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Footer */
+        
+        .footer {
+            padding: 20px;
+            background: #000;
+            margin-top: 20px;
+        }
+        .container li{
+            color: black;
+        }
+        .container i{
+            color: white;
+        }
+        .titleM {
+            font-family: ShallowThoughts;
+            color: #4b1f0e;
+            line-height: 2px;
+        }
+        .subH {
+            font-family: Century Gothic;
+            font-style: bold;
+            color: white;
+            font-size: 10px;
+        }
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 800px) {
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+      
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 class="titleM">likhang humaling</h1>
+        <p class="subH">photography  |  layouts  |  graphic design  |  paintings  |  art and crafts</p>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="folio.html">Folio</a>
+        <a href="art.html">Artworks</a>
+        <a href="about.html" style="float:right">About me</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>ARTWORK 1</h2>
+                <h5>Night Walk, March 28, 2018</h5>
+                <div class="artwork1" style="height:400px;">
+                </div>
+                <p><i>Oil on Canvas.</i>
+                <br>This painting was a project that I had submitted for the subject
+                <br>Art Appreciation when I was in my first years in college.
+                <br>This painting is a replica of Leonid Affrimov's painting.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>ARTWORK 2</h2>
+                <h5>Summer's Daisies, November 13, 2021</h5>
+                <div class="artwork2" style="height:500px;"></div>
+                <p><i>Digital Painting.</i>
+                <br>This art was a project that I had submitted for the subject
+                <br>Multimedia Systems. This art was created using different
+                <br>shapes, brushes, and colors in Adobe Photoshop.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>ARTWORK 3</h2>
+                <h5>Can U rlly c?, Sep 2, 2018</h5>
+                <div class="artwork3" style="height:200px;"></div>
+                <p><i>Watercolor on Paper.</i>
+                <br>I had made this painting on my free time when I was still in
+                <br>high school. Doodling and painting has been my hobby since then.
+                </p>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="abtme">
+                    <img src="home/aboutme.jpg" />
+                </div>
+                <p class="abttxt">Some text about me in culpa qui officia deserunt mollit anim..</p>
+            </div>
+
+            <div class="card">
+                <h2>Popular Post</h2>
+                <div class="pop1">
+                    <p class="poptxt">TUNAY SERIES</p>
+                </div>
+                <div class="pop2">
+                    <p class="poptxt">HIGNAW SERIES</p>
+                </div>
+                <div class="pop3">
+                    <p class="poptxt">ANTIGO SERIES</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Follow Me</h2>
+                <p>
+                    <ul style="list-style-type:none;">
+                        <li>
+                            <p class="links"><span><img src="home/fb.png" height="20"></span>  facebook.com/kthvy</p>
+                        </li>
+                        <li>
+                            <p class="links"><span><img src="home/ig.png" height="20"></span>  kimambs</p>
+                        </li>
+                        <li>
+                            <p class="links"><span><img src="home/mail.png" height="20"></span>  kthvyambs@gmail.com</p>
+                        </li>
+                        <li>
+                            <p class="links"><span><img src="home/twt.png" height="20"></span>  keithlings</p>
+                        </li>
+                        <li>
+                            <p class="links"><span><img src="home/yt.png" height="20"></span>  Kim Ambay</p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div  "social">
+                <ul>
+                    <li class="fa fa-facebook"><i>www.facebook.com/kthvy</i> </li>
+                    <li class="fa fa-twitter"><i>www.twitter.com/keithlings</i> </li>
+                    <li class="fa fa-youtube"><i>www.youtube.com/KimAmbay</i> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
